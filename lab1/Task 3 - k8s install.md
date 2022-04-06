@@ -38,7 +38,7 @@ sudo apt-mark hold kubelet kubeadm kubectl
 systemctl enable --now kubelet
 ```
 
-2. kubeadm 초기화
+2. kubeadm 초기화   Master IP는 master vm 의 private ip
 
 ```
 kubeadm init --pod-network-cidr=172.16.0.0/16 \
